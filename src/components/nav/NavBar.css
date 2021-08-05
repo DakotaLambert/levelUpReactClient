@@ -1,10 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 .navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: left;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+.navbarLogo:hover {
+  animation: shake 3s both;
+  backface-visibility: hidden;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, 1px) rotate(0deg); }
 }
 
 .navbar__item {
-    flex-basis: 20%;
-    list-style-type: none;
+	flex-basis: 10%;
+  border: 2px solid #666;
+  border-bottom: none;
+  font-family: "Luckiest Guy";
+  font-size: 25px;
+	list-style-type: none;
+  border-radius: 5px;
+	align-self: center;
+	text-align: center;
+	box-shadow: 0px 7px  rgb(121, 120, 120);
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+  opacity: 0.85;
+  background-image: url(../../images/homepage.png);
+  transition: 0.3s;
 }
+
+.navbar__item:hover {
+  opacity: 1;
+  transition: 0.3s;
+
+}
+.navbar__item:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  color: black;
+}
+/* display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999; */
