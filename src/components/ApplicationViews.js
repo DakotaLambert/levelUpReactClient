@@ -7,6 +7,7 @@ import { GameProvider } from "./game/GameProvider.js";
 import { GameForm } from "./game/GameForm.js";
 
 import landingLogo from "../images/levelupGIF.gif";
+import { EventForm } from "./game/EventForm.js";
 
 export const ApplicationViews = () => {
 	return (
@@ -18,23 +19,26 @@ export const ApplicationViews = () => {
 				}}
 			>
 				<Route exact path="/" style={{}}>
-          {/* <img src={home} className="homeboy"/> */}
+					{/* <img src={home} className="homeboy"/> */}
 					<div
 						style={{ margin: "auto", maxWidth: "900px", textAlign: "center" }}
 					>
 						<img src={landingLogo} style={{ maxHeight: "13rem" }} />
 					</div>
 				</Route>
-
-				<GameProvider>
-					<Route exact path="/games">
-						<GameList />
-					</Route>
-					<Route exact path="/games/new">
-						<GameForm />
-					</Route>
-				</GameProvider>
 				<EventProvider>
+					<GameProvider>
+						<Route exact path="/games">
+							<GameList />
+						</Route>
+						<Route exact path="/games/new">
+							<GameForm />
+						</Route>
+						<Route exact path="/events/new">
+							<EventForm />
+						</Route>
+					</GameProvider>
+
 					<Route exact path="/events">
 						<EventList />
 					</Route>
