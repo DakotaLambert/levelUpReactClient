@@ -1,28 +1,29 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
-
+import logo from "../../images/levelupLogo.png"
 export const NavBar = (props) => {
     return (
         <ul className="navbar">
+            <Link to="/"><img src={logo} style={{maxHeight: "5rem"}} className="navbarLogo"/></Link>
             <li className="navbar__item">
-                Navigation link
+                <Link to="/games">Games</Link>
             </li>
             <li className="navbar__item">
-                Navigation link
+            <Link to="/events">Events</Link>
             </li>
             <li className="navbar__item">
-                Navigation link
+            <Link to="/badBoiLink">BLANK</Link>
             </li>
             {
                 (localStorage.getItem("lu_token") !== null) ?
-                    <li className="nav-item">
-                        <button className="nav-link fakeLink"
+                    <li className="navbar__item">
+                        <Link className="fakeLink"
                             onClick={() => {
                                 localStorage.removeItem("lu_token")
                                 props.history.push({ pathname: "/" })
                             }}
-                        >Logout</button>
+                        >Logout</Link>
                     </li> :
                     <>
                         <li className="nav-item">
