@@ -32,7 +32,7 @@
   border: 2px solid #666;
   border-bottom: none;
   font-family: "Luckiest Guy";
-  font-size: 25px;
+  font-size: 28px;
 	list-style-type: none;
   border-radius: 5px;
 	align-self: center;
@@ -43,6 +43,9 @@
   opacity: 0.85;
   background-image: url(../../images/homepage.png);
   transition: 0.3s;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2.2px;
+  -webkit-text-stroke-color: black;
 }
 
 .navbar__item:hover {

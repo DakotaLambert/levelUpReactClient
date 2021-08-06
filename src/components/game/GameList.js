@@ -18,7 +18,7 @@ export const GameList = (props) => {
 				<h1>Games</h1>
 			</header>
 			<button
-				className="btn btn-2 icon-create"
+				className="icon-create gameListButton"
 				onClick={() => {
 					history.push({ pathname: "/games/new" });
 				}}
@@ -28,7 +28,7 @@ export const GameList = (props) => {
 
 			{games.map((game) => {
 				return (
-					<section key={`game--${game.id}`} className="game">
+					<section key={`game--${game.id}`} className="game" style={{marginBottom: "2rem"}}>
 						<div className="game__name">
 							{game.name} by {game.maker}
 						</div>
