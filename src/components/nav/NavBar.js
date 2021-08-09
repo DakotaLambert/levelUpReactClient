@@ -7,13 +7,13 @@ export const NavBar = (props) => {
         <ul className="navbar">
             <Link to="/"><img src={logo} style={{maxHeight: "5rem"}} className="navbarLogo"/></Link>
             <li className="navbar__item">
-                <Link to="/games">Games</Link>
+                <Link to="/games">GAMES</Link>
             </li>
             <li className="navbar__item">
             <Link to="/events">Events</Link>
             </li>
             <li className="navbar__item">
-            <Link to="/badBoiLink">BLANK</Link>
+            <Link to="/profile">Profile</Link>
             </li>
             {
                 (localStorage.getItem("lu_token") !== null) ?

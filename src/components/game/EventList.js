@@ -5,8 +5,9 @@ import { EventContext } from "./EventProvider.js";
 import "../game/EventStyles.css";
 
 export const EventList = (props) => {
-	const { events, getEvents } = useContext(EventContext);
-  const [game] = useState({})
+  // const [game] = useState({})
+
+	const { events, getEvents, joinEvent, leaveEvent } = useContext(EventContext);
 	const history = useHistory();
 
 	useEffect(() => {
@@ -15,9 +16,10 @@ export const EventList = (props) => {
 
 	return (
 		<article className="events">
-			<header className="events__header">
-				<h1>Level Up Game Events</h1>
-			</header>
+
+			<header className="events__header" style={{textAlign: "center"}}>
+				<h1>Level Up Events</h1>
+			
 			<button
 				className="icon-create eventListButton"
 				onClick={() => {
@@ -25,13 +27,13 @@ export const EventList = (props) => {
 				}}
 			>
 				Register New Event
-			</button>
+			</button></header>
 			{events.map((event) => {
 				return (
-					<section key={event.id} className="eventList" style={{marginBottom: "2rem"}}>
-						<div className="registration__game">{event.game.name}</div>
-						<div>{event.description}</div>
-						<div>
+					<section key={event.id} className="eventList" style={{marginBottom: "3rem"}}>
+						<div className="eventTextBox">
+              {event.game.name}<br />
+						  {event.description}<br />
 							{new Date(event.date).toLocaleDateString("en-US", {
 								weekday: "long",
 								year: "numeric",
@@ -40,6 +42,10 @@ export const EventList = (props) => {
 							})}
 							@ {event.time}
 						</div>
+            {event.joined
+                ? <button className="eventLeaveButton" onClick={() => leaveEvent(event.id)}>Leave</button>
+                : <button className="eventJoinButton" onClick={() => joinEvent(event.id)}>Join</button>
+            }
 					</section>
 				);
 			})}

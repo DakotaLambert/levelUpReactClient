@@ -4,7 +4,7 @@
 	background-color: rgb(241, 241, 221, 0.92);
 	padding: 2rem;
 	border-radius: 5px;
-	max-width: 1300px;
+	max-width: 885px;
 	margin: auto;
 }
 .gameListButton {
@@ -40,6 +40,15 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   color: black;
+}
+
+.gameCard {
+  display: flex;
+  flex-basis: 20%;
+  margin-bottom: 2rem;
+}
+.gamesHeader {
+  text-align: center;
 }
 
 /*? Form Styles */
