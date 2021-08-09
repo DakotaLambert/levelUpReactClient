@@ -2,15 +2,81 @@
 /*? List Styles */
 
 .events {
-    background-color: rgb(241, 241, 221, 0.92);
+    background-color: rgb(241, 241, 221, 0.87);
     padding: 2rem;
     border-radius: 5px;
-    max-width: 1300px;
+    max-width: 885px;
     margin: auto;
 }
 .eventList {
   display: flex;
   flex-direction: column;
+}
+.eventJoinButton {
+  border: 2px solid #666;
+	border-bottom: none;
+	font-family: "Luckiest Guy";
+	font-size: 20px;
+	border-radius: 5px;
+	align-self: center;
+	text-align: center;
+	box-shadow: 0px 7px rgb(121, 120, 120);
+	padding: 0.4rem;
+	opacity: 0.9;
+	background-image: url(../../images/joinButton.png);
+	transition: 0.3s;
+	transform: perspective(100px) translateZ(0px);
+  background-size: 155px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: black;
+}
+.eventJoinButton:hover {
+  opacity: 1;
+  transition: 0.1s;
+
+}
+.eventJoinButton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  color: black;
+}
+.eventLeaveButton {
+  border: 2px solid #666;
+	border-bottom: none;
+	font-family: "Luckiest Guy";
+	font-size: 20px;
+	border-radius: 5px;
+	align-self: center;
+	text-align: center;
+	box-shadow: 0px 7px rgb(121, 120, 120);
+	padding: 0.4rem;
+	opacity: 0.9;
+	background-image: url(../../images/buttonTry2.png);
+	transition: 0.3s;
+	transform: perspective(100px) translateZ(0px);
+  background-size: 95px;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: black;
+}
+.eventLeaveButton:hover {
+  opacity: 1;
+  transition: 0.1s;
+
+}
+.eventLeaveButton:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  color: black;
+}
+
+
+.eventTextBox {
+  text-align: center;
+  margin: auto;
+  max-width: 70%;
+  margin-bottom: 1rem;
 }
 
 /*? Form Styles */
