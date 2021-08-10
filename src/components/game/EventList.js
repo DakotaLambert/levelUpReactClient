@@ -3,6 +3,8 @@ import { useHistory } from "react-router";
 import { EventContext } from "./EventProvider.js";
 
 import "../game/EventStyles.css";
+import eventHeader from "../../images/eventHeader.png"
+
 
 export const EventList = (props) => {
   // const [game] = useState({})
@@ -17,9 +19,9 @@ export const EventList = (props) => {
 	return (
 		<article className="events">
 
-			<header className="events__header" style={{textAlign: "center"}}>
-				<h1>Level Up Events</h1>
-			
+			<header className="eventHeader" style={{textAlign: "center", fontSize: "60px"}}>
+        <div style={{marginBottom: "2rem"}}><img src={eventHeader}/></div>
+				{/* <h1 style={{fontSize: "60px"}}>Events</h1> */}
 			<button
 				className="icon-create eventListButton"
 				onClick={() => {

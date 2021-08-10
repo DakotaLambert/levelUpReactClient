@@ -1,14 +1,16 @@
 /*? List Styles */
 
 .games {
-	background-color: rgb(241, 241, 221, 0.92);
+	/* background-color: rgb(241, 241, 221, 0.92); */
+	background-image: url(../../images/cloudsButton.png);
+
 	padding: 2rem;
 	border-radius: 5px;
-	max-width: 885px;
+	max-width: 899px;
 	margin: auto;
 }
-.gameListButton {
-  cursor: pointer;
+.gameRegisterButton {
+	cursor: pointer;
 	background-image: url(../../images/buttonTry.png);
 	color: #fff;
 	margin-left: 0;
@@ -25,30 +27,78 @@
 	letter-spacing: 1px;
 	position: relative;
 	transition: all 0.3s;
-  background-size: 500px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
+	background-size: 500px;
   
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
 }
-.gameListButton:hover {
-  opacity: 1;
-  transition: 0.3s;
+.gameRegisterButton:hover {
+	opacity: 1;
+	transition: 0.3s;
+}
+.gameRegisterButton:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	color: black;
+}
 
+.gameList {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	padding: 1rem;
+	max-width: 560px;
+	margin: auto;
+	margin-bottom: 3rem;
+	border-radius: 5px;
+	background-color: #ecf3d5;
+	box-shadow: 7px 8px 0px 0px rgb(0 0 0 / 24%),
+		20px 10px 20px 0 rgb(0 0 0 / 50%);
 }
-.gameListButton:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  color: black;
-}
-
-.gameCard {
-  display: flex;
-  flex-basis: 20%;
-  margin-bottom: 2rem;
+.gameTextBox {
+	text-align: center;
+	margin: auto;
+	/* max-width: 70%; */
+	margin-bottom: 1rem;
 }
 .gamesHeader {
-  text-align: center;
+	text-align: center;
+	font-family: "Luckiest Guy";
+  -webkit-text-fill-color: white; 
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+
+}
+
+.gameEditButton {
+  cursor: pointer;
+	border: 2px solid #666;
+	border-bottom: none;
+	font-family: "Luckiest Guy";
+	font-size: 20px;
+	border-radius: 5px;
+	align-self: center;
+	text-align: center;
+	box-shadow: 0px 7px rgb(121, 120, 120);
+	padding: 0.4rem;
+	opacity: 0.9;
+	background-image: url(../../images/buttonTry.png);
+	transition: 0.3s;
+	transform: perspective(100px) translateZ(0px);
+	background-size: 175px;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.7px;
+	-webkit-text-stroke-color: black;
+}
+.gameEditButton:hover {
+	opacity: 1;
+	transition: 0.1s;
+}
+.gameEditButton:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	color: black;
 }
 
 /*? Form Styles */
@@ -75,10 +125,10 @@
 	background-image: url(../../images/buttonTry.png);
 	transition: 0.3s;
 	transform: perspective(100px) translateZ(0px);
-  background-size: 145px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.7px;
-  -webkit-text-stroke-color: black;
+	background-size: 145px;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.7px;
+	-webkit-text-stroke-color: black;
 }
 
 .gameFormSubmitButton:hover {

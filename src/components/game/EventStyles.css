@@ -1,19 +1,34 @@
-
 /*? List Styles */
 
 .events {
-    background-color: rgb(241, 241, 221, 0.87);
-    padding: 2rem;
-    border-radius: 5px;
-    max-width: 885px;
-    margin: auto;
+	background-image: url(../../images/cloudsButton.png);
+	padding: 2rem;
+	border-radius: 5px;
+	max-width: 899px;
+	margin: auto;
+}
+.eventHeader {
+  text-align: center;
+	font-family: "Luckiest Guy";
+  -webkit-text-fill-color: white; 
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
 }
 .eventList {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	padding: 1rem;
+	max-width: 560px;
+	margin: auto;
+	margin-bottom: 3rem;
+	border-radius: 5px;
+	background-color: #ecf3d5;
+	box-shadow: 7px 8px 0px 0px rgb(0 0 0 / 24%),
+		20px 10px 20px 0 rgb(0 0 0 / 50%);
 }
 .eventJoinButton {
-  border: 2px solid #666;
+	border: 2px solid #666;
 	border-bottom: none;
 	font-family: "Luckiest Guy";
 	font-size: 20px;
@@ -26,23 +41,22 @@
 	background-image: url(../../images/joinButton.png);
 	transition: 0.3s;
 	transform: perspective(100px) translateZ(0px);
-  background-size: 155px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.7px;
-  -webkit-text-stroke-color: black;
+	background-size: 155px;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.7px;
+	-webkit-text-stroke-color: black;
 }
 .eventJoinButton:hover {
-  opacity: 1;
-  transition: 0.1s;
-
+	opacity: 1;
+	transition: 0.1s;
 }
 .eventJoinButton:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  color: black;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	color: black;
 }
 .eventLeaveButton {
-  border: 2px solid #666;
+	border: 2px solid #666;
 	border-bottom: none;
 	font-family: "Luckiest Guy";
 	font-size: 20px;
@@ -55,41 +69,39 @@
 	background-image: url(../../images/buttonTry2.png);
 	transition: 0.3s;
 	transform: perspective(100px) translateZ(0px);
-  background-size: 95px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.7px;
-  -webkit-text-stroke-color: black;
+	background-size: 95px;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.7px;
+	-webkit-text-stroke-color: black;
 }
 .eventLeaveButton:hover {
-  opacity: 1;
-  transition: 0.1s;
-
+	opacity: 1;
+	transition: 0.1s;
 }
 .eventLeaveButton:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  color: black;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	color: black;
 }
 
-
 .eventTextBox {
-  text-align: center;
-  margin: auto;
-  max-width: 70%;
-  margin-bottom: 1rem;
+	text-align: center;
+	margin: auto;
+	/* max-width: 70%; */
+	margin-bottom: 1rem;
 }
 
 /*? Form Styles */
 
 .eventForm {
-  background-color: rgb(241, 241, 221, 0.92);
+	background-color: rgb(241, 241, 221, 0.92);
 	padding: 2rem;
 	border-radius: 5px;
 	max-width: 1300px;
 	margin: auto;
 }
 .eventListButton {
-  cursor: pointer;
+	cursor: pointer;
 	background-image: url(../../images/buttonTry.png);
 	color: #fff;
 	margin-left: 0;
@@ -106,21 +118,19 @@
 	letter-spacing: 1px;
 	position: relative;
 	transition: all 0.3s;
-  background-size: 500px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: black;
-  
+	background-size: 500px;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
 }
 .eventListButton:hover {
-  opacity: 1;
-  transition: 0.3s;
-
+	opacity: 1;
+	transition: 0.3s;
 }
 .eventListButton:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  color: black;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+	color: black;
 }
 
 .eventFormSubmitButton {
@@ -137,10 +147,10 @@
 	background-image: url(../../images/buttonTry.png);
 	transition: 0.3s;
 	transform: perspective(100px) translateZ(0px);
-  background-size: 145px;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.7px;
-  -webkit-text-stroke-color: black;
+	background-size: 145px;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.7px;
+	-webkit-text-stroke-color: black;
 }
 
 .eventFormSubmitButton:hover {
