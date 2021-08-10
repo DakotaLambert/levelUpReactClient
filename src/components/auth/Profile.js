@@ -30,7 +30,7 @@ export const Profile = () => {
 				</div>
 			</section>
 			<header className="registrations__header">
-				<h3>Your Events</h3>
+				<h3 style={{textAlign: "center", marginTop: "2rem"}}>Your Events</h3>
 			</header>
 			<section className="yourEvents">
 				{/* <div className="yourEventsBoxes"> */}
