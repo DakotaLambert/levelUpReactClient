@@ -29,23 +29,23 @@ export const Profile = () => {
 					About you: {profile.gamer && profile.gamer.bio}
 				</div>
 			</section>
-			<section className="profile__registrations">
-				<header className="registrations__header">
-					<h3>Your Events</h3>
-				</header>
-				<div className="registrations">
+			<header className="registrations__header">
+				<h3>Your Events</h3>
+			</header>
+			<section className="yourEvents">
+				{/* <div className="yourEventsBoxes"> */}
 					{profile.events.map((event) => {
 						return (
-							<div key={event.id} className="registration">
-								<div className="registration__game">{event.game.title}</div>
-								<div>{event.description}</div>
-								<div>
-									{event.date} @ {event.time}
-								</div>
+							<div key={event.id} className="yourEventsTextBox">
+								{event.game.name}
+								<br />
+								{event.description}
+								<br />
+								{event.date} @ {event.time}
 							</div>
 						);
 					})}
-				</div>
+				{/* </div> */}
 			</section>
 		</article>
 	);

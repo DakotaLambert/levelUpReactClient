@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./Auth.css"
 
+import registerHeader from "../../images/REGISTER.png"
+
 export const Register = (props) => {
     const firstName = React.createRef()
     const lastName = React.createRef()
@@ -53,7 +55,8 @@ export const Register = (props) => {
             </dialog>
 
             <form className="form--register" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Register an account</h1>
+                {/* <h1 className="h3 mb-3 font-weight-normal">Register an account</h1> */}
+                <img src={registerHeader} style={{marginBottom: "1rem", marginTop: "3rem", maxHeight: "5rem"}}/>
                 <fieldset>
                     <input ref={firstName} type="text" name="firstName" className="form-control" placeholder="First name" required autoFocus />
                 </fieldset>
