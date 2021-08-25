@@ -21,7 +21,7 @@ export const Profile = () => {
 				<div className="profile__name">
 					Welcome: {profile.gamer && profile.gamer.user.first_name}{" "}
 					{profile.gamer && profile.gamer.user.last_name}
-				</div>
+				</div>``
 				<div className="profile__username">
 					Username: {profile.gamer && profile.gamer.user.username}
 				</div>
@@ -33,7 +33,6 @@ export const Profile = () => {
 				<h3 style={{textAlign: "center", marginTop: "2rem"}}>Your Events</h3>
 			</header>
 			<section className="yourEvents">
-				{/* <div className="yourEventsBoxes"> */}
 					{profile.events.map((event) => {
 						return (
 							<div key={event.id} className="yourEventsTextBox">
